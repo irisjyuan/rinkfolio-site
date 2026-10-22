@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Follow on Rinkfolio</title>
+<meta name="description" content="Follow a skater on Rinkfolio.">
+<link rel="icon" href="../icon.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<main>
+<div class="hero">
+<img src="../icon.png" alt="Rinkfolio app icon">
+<h1 id="who">Follow on Rinkfolio</h1>
+<p id="how">Open Rinkfolio, go to Profile, tap the QR button, then Scan a code. Or search for this skater in Community.</p>
+</div>
+<div class="card">
+<p style="margin:0">Rinkfolio is coming soon to the App Store. Questions? Email <a href="mailto:rinkfolioapp@gmail.com">rinkfolioapp@gmail.com</a>.</p>
+</div>
+<footer>Rinkfolio by Iris Yuan · <a href="../privacy">Privacy</a> · <a href="../terms">Terms</a> · <a href="../support">Support</a></footer>
+</main>
+<script>
+  var name = new URLSearchParams(location.search).get("name");
+  if (name && /^[a-z0-9._]{3,20}$/i.test(name)) {
+    document.getElementById("who").textContent = "Follow @" + name + " on Rinkfolio";
+    document.getElementById("how").textContent = "In Rinkfolio, search for @" + name + " in Community, or scan their code from Profile.";
+    document.title = "@" + name + " on Rinkfolio";
+  }
+</script>
+</body>
+</html>
