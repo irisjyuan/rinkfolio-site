@@ -1,0 +1,13 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["FH2CP7N62C.com.irisjyuan.rinkfolio"],
+        "components": [
+          { "/": "/u", "comment": "A skater's profile link (rinkfolio.com/u?name=…)" },
+          { "/": "/u/*", "comment": "The same, with a trailing slash" }
+        ]
+      }
+    ]
+  }
+}
