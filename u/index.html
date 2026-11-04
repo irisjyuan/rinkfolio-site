@@ -4,9 +4,20 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>A skater on Rinkfolio</title>
+<meta name="robots" content="noindex">
 <meta name="description" content="Open a skater's profile on Rinkfolio.">
+<link rel="icon" href="../favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="64x64" href="../favicon.png">
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Rinkfolio">
+<meta property="og:title" content="A skater on Rinkfolio">
+<meta property="og:description" content="Open a skater's profile on Rinkfolio.">
+<meta property="og:image" content="https://rinkfolio.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Rinkfolio: Find, log and share skating">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -17,7 +28,7 @@
 <p id="how">To open this skater's profile, open Rinkfolio, go to Profile, tap the QR button, then Scan a code. Or search for them in Community.</p>
 </div>
 <div class="card">
-<p style="margin:0">Rinkfolio is coming soon to the App Store. Questions? Email <a href="mailto:rinkfolioapp@gmail.com">rinkfolioapp@gmail.com</a>.</p>
+<p style="margin:0">Questions? Email <a href="mailto:rinkfolioapp@gmail.com">rinkfolioapp@gmail.com</a>.</p>
 </div>
 <footer>Rinkfolio by Iris Yuan · <a href="../support">Support</a> · <a href="../privacy">Privacy</a> · <a href="../terms">Terms</a></footer>
 </main>
@@ -27,6 +38,7 @@
     document.getElementById("who").textContent = "@" + name + " on Rinkfolio";
     document.getElementById("how").textContent = "To open their profile in Rinkfolio, scan their code from Profile, or search for @" + name + " in Community.";
     document.title = "@" + name + " on Rinkfolio";
+    document.querySelector('meta[name="description"]').content = "Open @" + name + "'s profile on Rinkfolio.";
   }
 </script>
 </body>
