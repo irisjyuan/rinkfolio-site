@@ -3,43 +3,174 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>A skater on Rinkfolio</title>
+<title>Skate with me on Rinkfolio</title>
 <meta name="robots" content="noindex">
-<meta name="description" content="Open a skater's profile on Rinkfolio.">
+<meta name="description" content="Find rinks, log your skating and follow other skaters.">
 <link rel="icon" href="../favicon.ico" sizes="any">
-<link rel="icon" type="image/png" sizes="64x64" href="../favicon.png">
+<link rel="icon" type="image/png" sizes="48x48" href="../favicon-48.png">
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Rinkfolio">
-<meta property="og:title" content="A skater on Rinkfolio">
-<meta property="og:description" content="Open a skater's profile on Rinkfolio.">
+<meta property="og:title" content="Skate with me on Rinkfolio">
+<meta property="og:description" content="Find rinks, log your skating and follow other skaters.">
 <meta property="og:image" content="https://rinkfolio.com/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Rinkfolio: Find, log and share skating">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="../style.css">
+<style>
+  :root { --home: #c2549e; --home-tint: #fbe9f3; --avatar: #d1d1d6; --badge: #111111; }
+  @media (prefers-color-scheme: dark) {
+    :root { --home: #db7bba; --home-tint: #3a2231; --avatar: #48484a; --badge: #ffffff; }
+  }
+  [hidden] { display: none !important; }
+  main { max-width: 480px; }
+  .brand { display: flex; align-items: center; gap: 8px; color: var(--ink); text-decoration: none; font-weight: 800; font-size: 20px; }
+  .brand img { width: 28px; height: 28px; }
+  .layout { display: flex; flex-direction: column; gap: 24px; margin-top: 22px; }
+  .skater { background: var(--card); border-radius: 20px; padding: 24px 20px; text-align: center; }
+  .avatar { width: 96px; height: 96px; border-radius: 50%; background: var(--avatar); object-fit: cover; display: block; margin: 0 auto; border: 4px solid var(--bg); }
+  .skater h1 { font-size: 28px; margin: 12px 0 0; overflow-wrap: anywhere; }
+  .handle { color: var(--muted); margin: 0; overflow-wrap: anywhere; }
+  .rinks { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 12px; }
+  .rink { display: inline-flex; align-items: center; gap: 6px; min-height: 34px; padding: 0 14px; border-radius: 17px; background: var(--home-tint); font-size: 15px; font-weight: 500; }
+  .rink svg { flex: none; fill: var(--home); }
+  .about { color: var(--muted); font-size: 15px; line-height: 1.45; margin: 14px 0 0; }
+  .join h2 { margin: 0 0 14px; font-size: 22px; }
+  .store { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 56px; border-radius: 14px; background: var(--badge); color: var(--bg); text-decoration: none; line-height: 1.15; }
+  .store small { font-size: 12px; font-weight: 500; }
+  .store span { font-size: 20px; font-weight: 600; }
+  .after { border-top: 1px solid var(--line); margin-top: 18px; padding-top: 16px; }
+  .after p { margin: 0 0 10px; font-size: 15px; color: var(--muted); }
+  .open { display: flex; align-items: center; justify-content: center; min-height: 50px; border-radius: 25px; border: 1.5px solid var(--blue); color: var(--blue); font-weight: 600; text-decoration: none; padding: 0 16px; text-align: center; }
+  .note { color: var(--muted); font-size: 15px; margin: 0; }
+  @media (min-width: 760px) {
+    main { max-width: 880px; }
+    .layout { flex-direction: row; align-items: stretch; }
+    .layout > * { flex: 1; }
+    .join { border: 1px solid var(--line); border-radius: 20px; padding: 24px; }
+  }
+</style>
 </head>
 <body>
 <main>
-<div class="hero">
-<img src="../logo.png" alt="Rinkfolio">
-<h1 id="who">A skater on Rinkfolio</h1>
-<p id="how">To open this skater's profile, open Rinkfolio, go to Profile, tap the QR button, then Scan a code. Or search for them in Community.</p>
+<a class="brand" href="../"><img src="../logo.png" alt="">Rinkfolio</a>
+
+<div class="layout">
+  <section class="skater" aria-live="polite">
+    <img class="avatar" id="avatar" alt="" hidden>
+    <div class="avatar" id="avatar-blank" aria-hidden="true"></div>
+    <h1 id="title">A skater on Rinkfolio</h1>
+    <p class="handle" id="handle" hidden></p>
+    <div class="rinks" id="rinks" hidden></div>
+    <p class="about" id="about">Rinkfolio is an app for finding rinks, logging your skating and following other skaters.</p>
+  </section>
+
+  <section class="join">
+    <h2 id="join-title">Join on Rinkfolio</h2>
+    <div id="for-iphone" hidden>
+      <a class="store" id="store" href="#" hidden><small>Download on the</small><span>App Store</span></a>
+      <p class="note" id="store-soon" hidden>Rinkfolio is coming to the App Store soon.</p>
+      <div class="after" id="after">
+        <p id="after-text">Once you've signed up, come back here to open their profile.</p>
+        <a class="open" id="open" href="rinkfolio://u/">Open in Rinkfolio</a>
+      </div>
+    </div>
+    <p class="note" id="for-android" hidden>Rinkfolio is on iPhone for now.</p>
+    <p class="note" id="for-computer" hidden>Rinkfolio is an iPhone app. Open this link on your iPhone to get it.</p>
+  </section>
 </div>
-<div class="card">
-<p style="margin:0">Questions? Email <a href="mailto:rinkfolioapp@gmail.com">rinkfolioapp@gmail.com</a>.</p>
-</div>
-<footer>Rinkfolio by Iris Yuan · <a href="../support">Support</a> · <a href="../privacy">Privacy</a> · <a href="../terms">Terms</a></footer>
+
+<footer><a href="../support">Support</a> · <a href="../privacy">Privacy</a> · <a href="../terms">Terms</a></footer>
 </main>
+
 <script>
-  var name = new URLSearchParams(location.search).get("name");
-  if (name && /^[a-z0-9._]{3,20}$/i.test(name)) {
-    document.getElementById("who").textContent = "@" + name + " on Rinkfolio";
-    document.getElementById("how").textContent = "To open their profile in Rinkfolio, scan their code from Profile, or search for @" + name + " in Community.";
-    document.title = "@" + name + " on Rinkfolio";
-    document.querySelector('meta[name="description"]').content = "Open @" + name + "'s profile on Rinkfolio.";
+(function () {
+  // The App Store page, once Rinkfolio has one. Until it's set, the page says it's coming soon.
+  var APP_STORE_URL = null;
+
+  // rinkfolio.com reads the live database; anywhere else (a copy on your Mac, say) reads staging.
+  // Both keys are the apps' public ones: they allow only what the database's rules allow.
+  var live = location.hostname === "rinkfolio.com" || location.hostname === "www.rinkfolio.com";
+  var DB = live
+    ? { url: "https://wdgsepvbwefcvvkqglsl.supabase.co", key: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndkZ3NlcHZid2VmY3Z2a3FnbHNsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIwNzI4MzIsImV4cCI6MjEwNzY0ODgzMn0.BxHImP-DClkU-ehXVlJ8-hIq-UIydyIV69LNJFnn-N0" }
+    : { url: "https://pzsowatjlndooobqmmqr.supabase.co", key: "sb_publishable_L8SnHyLsheJ_D_KRNqicXg_EZCbeE0h" };
+
+  var $ = function (id) { return document.getElementById(id); };
+  var raw = (new URLSearchParams(location.search).get("name") || "").trim().replace(/^@/, "");
+  var username = /^[a-z0-9._]{3,20}$/i.test(raw) ? raw.toLowerCase() : null;
+
+  // Which way in: an iPhone or iPad gets the App Store, Android and computers a line instead.
+  var ua = navigator.userAgent;
+  var isApple = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+  var isAndroid = /Android/.test(ua);
+  if (isApple) {
+    $("for-iphone").hidden = false;
+    if (APP_STORE_URL) { $("store").href = APP_STORE_URL; $("store").hidden = false; }
+    else { $("store-soon").hidden = false; }
+  } else if (isAndroid) {
+    $("for-android").hidden = false;
+  } else {
+    $("for-computer").hidden = false;
   }
+
+  if (!username) { notFound(raw); return; }
+  $("open").href = "rinkfolio://u/" + encodeURIComponent(username);
+  showHandleOnly(username);
+
+  fetch(DB.url + "/rest/v1/rpc/profile_card", {
+    method: "POST",
+    headers: { "apikey": DB.key, "Content-Type": "application/json" },
+    body: JSON.stringify({ p_username: username })
+  })
+    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(function (card) { if (card) showCard(card); else notFound(username); })
+    // Couldn't reach the database: the @username and the way in still work.
+    .catch(function () {});
+
+  function showHandleOnly(name) {
+    $("title").textContent = "@" + name;
+    $("join-title").textContent = "Join @" + name + " on Rinkfolio";
+    $("open").textContent = "Open @" + name + " in Rinkfolio";
+    document.title = "@" + name + " on Rinkfolio";
+  }
+
+  function showCard(card) {
+    var name = card.name && card.name.trim() ? card.name.trim() : null;
+    var first = name ? name.split(/\s+/)[0] : "@" + card.username;
+    $("title").textContent = name || "@" + card.username;
+    if (name) { $("handle").textContent = "@" + card.username; $("handle").hidden = false; }
+    if (card.avatar_path) {
+      $("avatar").src = DB.url + "/storage/v1/object/public/avatars/" + card.avatar_path.split("/").map(encodeURIComponent).join("/");
+      $("avatar").alt = (name || "@" + card.username) + "'s photo";
+      $("avatar").hidden = false;
+      $("avatar-blank").hidden = true;
+    }
+    var rinks = $("rinks");
+    (card.home_rinks || []).forEach(function (rink) {
+      var chip = document.createElement("span");
+      chip.className = "rink";
+      chip.innerHTML = '<svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 8h-3v9h-5v-6h-2v6H6v-9H3z"></path></svg>';
+      chip.appendChild(document.createTextNode(rink.name || (rink.kind === "wild_ice" ? "Unnamed wild ice" : "Unnamed rink")));
+      rinks.appendChild(chip);
+    });
+    rinks.hidden = rinks.children.length === 0;
+    $("about").textContent = first + " is on Rinkfolio, an app for finding rinks, logging your skating and following other skaters.";
+    $("join-title").textContent = "Join " + first + " on Rinkfolio";
+    $("after-text").textContent = "Once you've signed up, come back here to open " + (name ? first + "'s" : "their") + " profile and follow each other.";
+  }
+
+  function notFound(name) {
+    $("title").textContent = name ? "We couldn't find @" + name : "We couldn't find that skater";
+    $("handle").hidden = true;
+    $("rinks").hidden = true;
+    $("about").textContent = "They may have changed their username. Ask them to send their link again.";
+    $("join-title").textContent = "New to Rinkfolio?";
+    $("after").hidden = true;
+    document.title = "Rinkfolio";
+  }
+})();
 </script>
 </body>
 </html>
