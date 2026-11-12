@@ -31,6 +31,8 @@
   .layout { display: flex; flex-direction: column; gap: 24px; margin-top: 22px; }
   .skater { background: var(--card); border-radius: 20px; padding: 24px 20px; text-align: center; }
   .avatar { width: 96px; height: 96px; border-radius: 50%; background: var(--avatar); object-fit: cover; display: block; margin: 0 auto; border: 4px solid var(--bg); }
+  .avatar.blank { display: flex; align-items: center; justify-content: center; }
+  .avatar.blank svg { fill: #ffffff; }
   .skater h1 { font-size: 28px; margin: 12px 0 0; overflow-wrap: anywhere; }
   .handle { color: var(--muted); margin: 0; overflow-wrap: anywhere; }
   .rinks { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 12px; }
@@ -60,7 +62,7 @@
 <div class="layout">
   <section class="skater" aria-live="polite">
     <img class="avatar" id="avatar" alt="" hidden>
-    <div class="avatar" id="avatar-blank" aria-hidden="true"></div>
+    <div class="avatar blank" id="avatar-blank" aria-hidden="true"><svg viewBox="0 0 24 24" width="56" height="56"><circle cx="12" cy="8" r="4.2"></circle><path d="M3.5 21c.9-4.4 4.4-7 8.5-7s7.6 2.6 8.5 7z"></path></svg></div>
     <h1 id="title">A skater on Rinkfolio</h1>
     <p class="handle" id="handle" hidden></p>
     <div class="rinks" id="rinks" hidden></div>
