@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.irisjyuan.rinkfolio",
+      "sha256_cert_fingerprints": [
+        "36:41:EE:D7:CA:67:19:F0:9A:8F:E1:4D:D1:50:05:7A:A6:11:3F:BD:7B:A4:A9:5E:1C:8C:59:95:15:E4:EC:9F"
+      ]
+    }
+  }
+]
