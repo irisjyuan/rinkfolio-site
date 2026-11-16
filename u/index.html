@@ -43,9 +43,8 @@
   .rink svg { flex: none; fill: var(--home); }
   .about { color: var(--muted); font-size: 15px; line-height: 1.45; margin: 14px 0 0; }
   .join h2 { margin: 0 0 14px; font-size: 22px; }
-  .store { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 56px; border-radius: 14px; background: var(--badge); color: var(--bg); text-decoration: none; line-height: 1.15; }
-  .store small { font-size: 12px; font-weight: 500; }
-  .store span { font-size: 20px; font-weight: 600; }
+  .store { display: flex; justify-content: center; border-radius: 10px; }
+  .store img { display: block; height: 56px; width: auto; }
   .after { border-top: 1px solid var(--line); margin-top: 18px; padding-top: 16px; }
   .after p { margin: 0 0 10px; font-size: 15px; color: var(--muted); }
   .open { display: flex; align-items: center; justify-content: center; min-height: 50px; border-radius: 25px; border: 1.5px solid var(--blue); color: var(--blue); font-weight: 600; text-decoration: none; padding: 0 16px; text-align: center; }
@@ -75,7 +74,7 @@
   <section class="join">
     <h2 id="join-title">Join on Rinkfolio</h2>
     <div id="for-iphone" hidden>
-      <a class="store" id="store" href="#" hidden><small>Download on the</small><span>App Store</span></a>
+      <a class="store" id="store" href="#" hidden><img src="../app-store-badge.svg" alt="Download on the App Store" width="168" height="56"></a>
       <p class="note" id="store-soon" hidden>Rinkfolio is coming to the App Store soon.</p>
       <div class="after" id="after">
         <p id="after-text">Once you've signed up, come back here to open their profile.</p>

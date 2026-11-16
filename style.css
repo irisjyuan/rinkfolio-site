@@ -48,11 +48,8 @@ footer a { color: var(--muted); }
 .button { display: block; max-width: 340px; margin: 16px auto 0; padding: 14px 20px; border-radius: 14px; background: var(--button); color: #ffffff; font-weight: 600; text-decoration: none; text-align: center; }
 .button:hover { filter: brightness(1.08); }
 .button:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
-.store-badge { display: flex; width: fit-content; flex-direction: column; justify-content: center; margin: 16px auto 4px; min-width: 162px; height: 54px; padding: 0 18px; border-radius: 10px; background: #000000; border: 1px solid #a6a6a6; color: #ffffff; text-decoration: none; line-height: 1.1; text-align: left; }
-.store-badge span:first-child { font-size: 11px; }
-.store-badge span:last-child { font-size: 22px; font-weight: 600; letter-spacing: -0.02em; }
+.store-badge { display: block; width: fit-content; margin: 16px auto 4px; border-radius: 10px; }
 .store-badge img { display: block; height: 54px; width: auto; }
-.store-badge:has(img) { background: none; border: 0; padding: 0; min-width: 0; height: auto; }
 .store-badge:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
 .hero .avail { font-size: 15px; margin: 8px 0 0; }
 .hero .follow { margin-top: 12px; font-size: 15px; }
