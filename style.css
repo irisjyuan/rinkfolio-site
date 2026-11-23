@@ -20,8 +20,8 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 main { max-width: 680px; margin: 0 auto; padding: 32px 16px 64px; }
-header { display: flex; align-items: center; gap: 12px; margin-bottom: 32px; }
-header a { display: flex; align-items: center; gap: 12px; color: var(--ink); text-decoration: none; font-weight: 700; font-size: 20px; }
+header { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 32px; }
+header > a { display: flex; align-items: center; gap: 12px; color: var(--ink); text-decoration: none; font-weight: 700; font-size: 20px; }
 header img { width: 32px; height: 32px; }
 h1 { font-size: 32px; line-height: 1.2; margin: 0 0 4px; }
 h2 { font-size: 20px; margin: 32px 0 8px; }
@@ -53,3 +53,8 @@ footer a { color: var(--muted); }
 .store-badge:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
 .hero .avail { font-size: 15px; margin: 8px 0 0; }
 .hero .follow { margin-top: 12px; font-size: 15px; }
+.topnav { display: flex; gap: 20px; font-size: 15px; }
+.topnav a { color: var(--muted); text-decoration: none; font-weight: 500; padding: 6px 0; }
+.topnav a:hover, .topnav a[aria-current="page"] { color: var(--ink); }
+.topnav a:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; border-radius: 4px; }
+header.home { justify-content: flex-end; margin-bottom: 0; }
