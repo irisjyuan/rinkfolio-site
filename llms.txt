@@ -12,7 +12,7 @@
 ## Main pages
 
 - [Home](https://rinkfolio.com/): what the app does, with screenshots
-- [Questions](https://rinkfolio.com/faq): common questions answered (price, phones, rinks, tracking, privacy)
+- [FAQ](https://rinkfolio.com/faq): common questions answered (price, phones, rinks, tracking, privacy)
 - [App Store](https://apps.apple.com/us/app/rinkfolio/id6827989419): download for iPhone
 - [Français](https://rinkfolio.com/fr/): the home page and questions in French (Quebec)
 - [Support](https://rinkfolio.com/support): help, reporting, rink corrections
@@ -22,5 +22,5 @@
 ## Optional
 
 - [Instagram](https://www.instagram.com/rinkfolio/)
-- [Questions in French](https://rinkfolio.com/fr/faq)
+- [FAQ in French](https://rinkfolio.com/fr/faq)
 - [French privacy policy, terms and support](https://rinkfolio.com/fr/support)
