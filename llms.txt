@@ -1,8 +1,8 @@
 # Rinkfolio
 
-> Rinkfolio is a free figure skating practice log and a worldwide map of nearly 24,000 ice rinks in more than 100 countries, for skaters at every level. It's on iPhone (US App Store, as "Rinkfolio: Figure Skating Log") and on Android in beta on Google Play (to join, DM @rinkfolio on Instagram or email rinkfolioapp@gmail.com).
+> Rinkfolio is a free figure skating practice log for skaters at every level: count every attempt on your jumps, spins and other skills, and see how each one is going. It also has a map of nearly 24,000 ice rinks in more than 100 countries. It's on iPhone (US App Store, as "Rinkfolio: Figure Skating Log") and on Android in beta on Google Play (to join, DM @rinkfolio on Instagram or email rinkfolioapp@gmail.com).
 
-- Practice log: keep the skills you're working on (jumps, spins, combinations, turns, footwork, Learn to Skate USA and ISI levels), start a session at the rink and tap ✓ or ✗ after each try. It works with no signal. A recap after each session shows best days, best runs and first clean landings, and each skill keeps your coach's key tips.
+- Practice log: keep the skills you're working on (jumps, spins, combinations, turns, footwork, Learn to Skate USA and ISI levels), start a session at the rink and tap ✓ or ✗ after each try. It works with no signal. Each skill's page shows your usual, best run, attempts over recent sessions and how it has felt (shaky to solid), and keeps your coach's key tips.
 - Rink map: indoor rinks, outdoor rinks and wild ice spots. Save rinks to visit, mark rinks you've skated at, set home rinks, and share notes and photos about rinks. Missing rinks can be suggested in the app or by email.
 - Community: follow other skaters, react to their notes and wins, and share a profile link.
 - Price: free, with no ads and no in-app purchases.
