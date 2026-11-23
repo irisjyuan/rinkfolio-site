@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://rinkfolio.com/</loc></url>
-<url><loc>https://rinkfolio.com/support</loc></url>
-<url><loc>https://rinkfolio.com/privacy</loc></url>
-<url><loc>https://rinkfolio.com/terms</loc></url>
-<url><loc>https://rinkfolio.com/delete-account</loc></url>
-<url><loc>https://rinkfolio.com/child-safety</loc></url>
-<url><loc>https://rinkfolio.com/fr/terms</loc></url>
-<url><loc>https://rinkfolio.com/fr/privacy</loc></url>
-<url><loc>https://rinkfolio.com/fr/support</loc></url>
+<url><loc>https://rinkfolio.com/</loc><lastmod>2026-11-23</lastmod></url>
+<url><loc>https://rinkfolio.com/faq</loc><lastmod>2026-11-23</lastmod></url>
+<url><loc>https://rinkfolio.com/support</loc><lastmod>2026-11-22</lastmod></url>
+<url><loc>https://rinkfolio.com/privacy</loc><lastmod>2026-11-23</lastmod></url>
+<url><loc>https://rinkfolio.com/terms</loc><lastmod>2026-11-23</lastmod></url>
+<url><loc>https://rinkfolio.com/delete-account</loc><lastmod>2026-11-13</lastmod></url>
+<url><loc>https://rinkfolio.com/child-safety</loc><lastmod>2026-11-13</lastmod></url>
+<url><loc>https://rinkfolio.com/fr/</loc><lastmod>2026-11-23</lastmod></url>
+<url><loc>https://rinkfolio.com/fr/faq</loc><lastmod>2026-11-23</lastmod></url>
+<url><loc>https://rinkfolio.com/fr/terms</loc><lastmod>2026-11-23</lastmod></url>
+<url><loc>https://rinkfolio.com/fr/privacy</loc><lastmod>2026-11-23</lastmod></url>
+<url><loc>https://rinkfolio.com/fr/support</loc><lastmod>2026-11-22</lastmod></url>
 </urlset>

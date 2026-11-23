@@ -1,0 +1,26 @@
+# Rinkfolio
+
+> Rinkfolio is a free figure skating practice log and a worldwide map of nearly 24,000 ice rinks in more than 100 countries, for skaters at every level. It's on iPhone (US App Store, as "Rinkfolio: Figure Skating Log") and on Android in beta on Google Play (to join, DM @rinkfolio on Instagram or email rinkfolioapp@gmail.com).
+
+- Practice log: keep the skills you're working on (jumps, spins, combinations, turns, footwork, Learn to Skate USA and ISI levels), start a session at the rink and tap ✓ or ✗ after each try. It works with no signal. A recap after each session shows best days, best runs and first clean landings, and each skill keeps your coach's key tips.
+- Rink map: indoor rinks, outdoor rinks and wild ice spots. Save rinks to visit, mark rinks you've skated at, set home rinks, and share notes and photos about rinks. Missing rinks can be suggested in the app or by email.
+- Community: follow other skaters, react to their notes and wins, and share a profile link.
+- Price: free, with no ads and no in-app purchases.
+- Who it's for: figure skaters aged 13 and up (14 in Quebec), at every level from Learn to Skate beginners up, adults included.
+- Made by Iris Yuan, an independent developer in California. Contact: rinkfolioapp@gmail.com
+
+## Main pages
+
+- [Home](https://rinkfolio.com/): what the app does, with screenshots
+- [Questions](https://rinkfolio.com/faq): common questions answered (price, phones, rinks, tracking, privacy)
+- [App Store](https://apps.apple.com/us/app/rinkfolio/id6827989419): download for iPhone
+- [Français](https://rinkfolio.com/fr/): the home page and questions in French (Quebec)
+- [Support](https://rinkfolio.com/support): help, reporting, rink corrections
+- [Privacy policy](https://rinkfolio.com/privacy)
+- [Terms](https://rinkfolio.com/terms)
+
+## Optional
+
+- [Instagram](https://www.instagram.com/rinkfolio/)
+- [Questions in French](https://rinkfolio.com/fr/faq)
+- [French privacy policy, terms and support](https://rinkfolio.com/fr/support)
