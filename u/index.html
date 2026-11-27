@@ -81,8 +81,8 @@
         <a class="open" id="open" href="rinkfolio://u/">Open in Rinkfolio</a>
       </div>
     </div>
-    <p class="note" id="for-android" hidden>Rinkfolio is on iPhone for now, and coming soon to Android.</p>
-    <p class="note" id="for-computer" hidden>Rinkfolio is an iPhone app. Open this link on your iPhone to get it.</p>
+    <p class="note" id="for-android" hidden>Rinkfolio is in beta on Android. To join, <a href="https://www.instagram.com/rinkfolio/">DM @rinkfolio on Instagram</a> or <a href="mailto:rinkfolioapp@gmail.com">email us</a>.</p>
+    <p class="note" id="for-computer" hidden>Rinkfolio is available on iOS: open this link on your iPhone to get it. On Android, it's in beta: to join, <a href="https://www.instagram.com/rinkfolio/">DM @rinkfolio on Instagram</a> or <a href="mailto:rinkfolioapp@gmail.com">email us</a>.</p>
   </section>
 </div>
 
@@ -105,7 +105,7 @@
   var raw = (new URLSearchParams(location.search).get("name") || "").trim().replace(/^@/, "");
   var username = /^[a-z0-9._]{3,20}$/i.test(raw) ? raw.toLowerCase() : null;
 
-  // Which way in: an iPhone or iPad gets the App Store, Android and computers a line instead.
+  // Which way in: an iPhone or iPad gets the App Store, Android the beta, computers a line instead.
   var ua = navigator.userAgent;
   var isApple = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
   var isAndroid = /Android/.test(ua);
